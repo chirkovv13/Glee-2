@@ -1,0 +1,97 @@
+.week-filter {
+  padding: 66px 0 85px;
+  text-align: center;
+  
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__btn {
+    margin-bottom: 72px;
+  }
+  
+  &__list {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    grid-gap: 40px 30px;
+  }
+}
+
+.product-page {
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    padding: 27px 15px 38px;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+   
+    &:hover .product-page__hover {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 55px;
+
+    & img {
+      max-height: 215px;
+    }
+    
+  }
+  
+  &__subtitle {
+    margin-bottom: 8px;
+  }
+  
+  &__cost {
+    font-size: 16px;
+    @extend %dmsans-700;
+    color: $unaccent-lighten
+  }
+
+  &__hover {
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+    top: 200px;
+    display: flex;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: z-index 0.3s, opacity 0.3s;
+  }
+}
+
+.hover-btn {
+  
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    fill: $unaccent-lighten;
+    background-color: $white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: fill 0.5s, background-color 0.5s;
+    &:hover {
+      fill: $white;
+      background-color: $unaccent-lighten;
+    }
+  }
+}

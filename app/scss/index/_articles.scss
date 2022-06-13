@@ -1,0 +1,89 @@
+.articles {
+  background: linear-gradient(to bottom, $white 461px, $accent-lighten 461px);
+  padding-top: 120px;
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 45px;
+  }
+
+  &__view {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: $title-dark;
+
+    & span {
+      margin-right: 15px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    min-height: 420px;
+    border-radius: 5px;
+    background-color: $white;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+
+  &__img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 32px 28px 23px;
+  }
+
+  &__descr {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    padding: 6px 30px;
+    @extend %poppins-700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $descr;
+    border-radius: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    @extend %dmsans-500;
+    font-size: 18px;
+    color: $title-dark;
+  }
+
+  &__info {
+    display: flex;
+    padding-top: 20px;
+    font-size: 12px;
+    color: $title-dark;
+    border-top: 1px solid $default-lighten;
+    text-transform: uppercase;
+
+  }
+
+  &__date {
+    margin-right: 15px;
+  }
+
+  &__icon {
+    margin: 0 5px;
+  }
+}

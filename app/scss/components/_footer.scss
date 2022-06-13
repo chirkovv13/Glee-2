@@ -1,0 +1,95 @@
+.footer {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 0 65px;
+    border-bottom: 1px solid $btn-light;
+  }
+
+  &__top-items {
+    line-height: 1.7;
+  }
+
+	&__top-contact,
+  &__top-nav {
+    max-width: 200px;
+    width: 100%;
+	}
+
+	&__top-news {
+    max-width: 270px;
+	}
+
+	&__top-logo {
+    margin-top: 8px;
+    margin-bottom: 24px;
+	}
+      
+  &__top-item:not(:last-child) {     
+    margin-bottom: 10px;
+  }
+
+	&__top-subtitle {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    @extend %dmsans-700;
+    text-transform: uppercase;
+    color: $subtitle-darken;
+	}
+
+	&__top-text {
+    margin-bottom: 35px;
+	}
+
+  &__top-form {
+    display: flex;
+    align-items: center;
+  }
+    
+	&__top-mail {
+    width: 170px;
+    padding: 8px 11px 9px;
+    font-size: 12px;
+    @extend %dmsans-400;
+    color: $subtitle-dark;
+    background-color: $accent-lighten;
+    border: none;
+
+    &::placeholder {
+      color: $subtitle-dark;
+    }
+	}
+
+	&__top-btn {
+    padding: 7px 18px 9px;
+    font-size: 14px;
+    line-height: 1.5;
+    @extend %dmsans-400;
+    border: none;
+	}
+
+  &__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  }
+
+	&__bottom-menu {
+    display: flex;
+  }
+    
+	&__bottom-item {
+    padding: 0 15px;
+	}
+
+  &__bottom-item:last-child {
+    padding-right: 0;
+	}
+    
+  &__bottom-item:not(:last-child) {
+    border-right: 1px solid $default;
+  }
+}

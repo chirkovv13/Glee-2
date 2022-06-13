@@ -1,0 +1,97 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  font-family: 'Rubik-Light';
+  src: local('Rubik-Light'),
+       url('../fonts/Rubik-Light.woff2') format('woff2'),
+       url('../fonts/Rubik-Light.woff') format('woff');
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Rubik-Regular';
+  src: local('Rubik-Regular'),
+       url('../fonts/Rubik-Regular.woff2') format('woff2'),
+       url('../fonts/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Rubik-Medium';
+  src: local('Rubik-Medium'),
+       url('../fonts/Rubik-Medium.woff2') format('woff2'),
+       url('../fonts/Rubik-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Rubik-Bold';
+  src: local('Rubik-Bold'),
+       url('../fonts/Rubik-Bold.woff2') format('woff2'),
+       url('../fonts/Rubik-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'DMSans-Regular';
+  src: local('DMSans-Regular'),
+       url('../fonts/DMSans-Regular.woff2') format('woff2'),
+       url('../fonts/DMSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'DMSans-Medium';
+  src: local('DMSans-Medium'),
+       url('../fonts/DMSans-Medium.woff2') format('woff2'),
+       url('../fonts/DMSans-Medium.woff') format('woff');
+}
+
+@font-face {font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'DMSans-Bold';
+  src: local('DMSans-Bold'),
+       url('../fonts/DMSans-Bold.woff2') format('woff2'),
+       url('../fonts/DMSans-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Poppins-SemiBold';
+  src: local('Poppins-SemiBold'),
+       url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+       url('../fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'),
+       url('../fonts/Poppins-Bold.woff2') format('woff2'),
+       url('../fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Nunito-Bold';
+  src: local('Nunito-Bold'),
+       url('../fonts/Nunito-Bold.woff2') format('woff2'),
+       url('../fonts/Nunito-Bold.woff') format('woff');
+}

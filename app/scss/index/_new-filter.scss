@@ -1,0 +1,56 @@
+.new-filter {
+  padding: 97px 0 122px;
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-bottom: 75px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    grid-gap: 34px 30px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 370px;
+    min-height: 245px;
+    background-color: $bg-light;
+    overflow: hidden;
+  }
+
+  &__link {
+    padding: 40px 35px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__subtitle {
+    max-width: 175px;
+    margin-bottom: 7px;
+    font-size: 20px;
+  }
+
+  &__descr {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: $descr;
+  }
+
+  &__img {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    &--position{
+      top: 45px;
+      left: 200px;
+    }
+  }
+}

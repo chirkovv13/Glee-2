@@ -1,0 +1,12 @@
+.video {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 79%;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+  }
+}

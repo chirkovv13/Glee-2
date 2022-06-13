@@ -1,0 +1,107 @@
+// colors
+
+$white:             #ffffff;
+
+$default-dark:      #585858;
+
+$default:           #7b7b7b;
+
+$default-light:     #e8e4df;
+
+$default-lighten:   #e0e0e0;
+
+$accent:            #fcd7b6;
+
+$accent-light:      #fde7d3;
+
+$accent-lighten:    #fef7f0;
+
+$accent-lightest:   #feefe2;
+
+$unaccent-lighten:  #a3bbc8;
+$btn:               $unaccent-lighten;
+$descr:             $unaccent-lighten;
+
+$button:            #8b8b8b;
+
+$btn-light:         #dae4e9;
+
+$btn-lighten:       #edf1f4;
+
+$btn-lightest:      #b3b7b5;
+
+$bg-light:          #f8f8f8;
+
+$text:              #436372;
+
+$title:             #191919;
+
+$title-dark:        #262626;
+
+$subtitle-darkest:  #414141;
+
+$subtitle-darken:   #1f2044;
+
+$subtitle-dark:     #234969;
+
+$subtitle:          #243f4d;
+
+// fonts
+
+%rubik-300 {
+  font-weight: 300;
+  font-family: 'Rubik-Light', sans-serif;
+}
+%rubik-400 {
+  font-weight: 400;
+  font-family: 'Rubik-Regular', sans-serif;
+}
+
+%rubik-500 {
+  font-weight: 500;
+  font-family: 'Rubik-Medium', sans-serif;
+}
+
+%rubik-700 {
+  font-weight: 700;
+  font-family: 'Rubik-Bold', sans-serif;
+}
+
+%dmsans-400 {
+  font-weight: 400;
+  font-family: 'DMSans-Regular', sans-serif;
+}
+
+%dmsans-500 {
+  font-weight: 500;
+  font-family: 'DMSans-Medium', sans-serif;
+}
+
+%dmsans-700 {
+  font-weight: 700;
+  font-family: 'DMSans-Bold', sans-serif;
+}
+
+%poppins-600 {
+  font-weight: 600;
+  font-family: 'Poppins-SemiBold', sans-serif;
+}
+
+%poppins-700 {
+  font-weight: 700;
+  font-family: 'Poppins-Bold', sans-serif;
+}
+
+%nunito-700 {
+  font-weight: 700;
+  font-family: 'Nunito-Bold', sans-serif;
+}
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{a}x(#{$numbers});
+}

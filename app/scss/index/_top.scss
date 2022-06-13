@@ -1,0 +1,136 @@
+.top-slider {
+  
+  &__inner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 215px 5px 281px;
+  }
+
+  &__content {
+    max-width: 470px;
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+    font-size: 72px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $subtitle;
+  }
+
+  &__text {
+    max-width: 375px;
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 1.66;
+    color: $text;
+  }
+
+  &__btn {
+    position: relative;
+    padding: 24px 101px 21px 27px;
+    &::after {
+      content: url('../images/icons/arrow-btn.svg');
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      transform: translateY(-50%)
+    }
+  }
+
+  &__img {
+    max-width: 650px;
+    width: 100%;
+    
+    & img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      
+    }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 45px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+
+  li {
+    padding: 0 6px;
+  }
+
+  button {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 1;
+    @extend %rubik-500;
+    background-color: $white;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  .slick-active{
+    
+    button{
+      opacity: 1;
+    }
+  }
+}
+
+.top-info {
+  
+  &__list {
+    display: flex;
+    background-color: $accent-lighten;
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 28px 0;
+  }
+
+  &__item:not(:last-child) {
+    border-right: 1px solid $default-light;
+  }
+
+  &__content {
+    max-width: 284px;
+    margin: 0 auto;
+    padding-left: 75px;
+    background-repeat: no-repeat;
+  }
+  
+  &__content--width {
+    max-width: 291px;
+  } 
+
+  &__subtitle {
+    margin-bottom: 6px;
+    font-size: 18px;
+    @extend %dmsans-700;
+    color: $subtitle-darkest;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: $default-dark;
+  }
+}

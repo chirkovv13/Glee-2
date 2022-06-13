@@ -1,0 +1,116 @@
+.header {
+  padding-top: 48px;
+  margin-bottom: 45px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__user-menu {
+    display: flex;
+  }
+
+  &__item {
+    line-height: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__link::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__link--search::before {
+    content: url('../images/icons/searсh.svg');
+    background-color: $btn-lighten;
+    border-radius: 25px;
+  }
+
+  &__item--double {
+    display: flex;
+    justify-content: center;
+    background-color: $accent;
+    border-radius: 25px;
+  }
+
+  &__link--favorites::before {
+    content: url('../images/icons/favorites.svg');
+    width: 90px;
+    height: 32px;
+    margin-top: 9px;
+    border-right: 1px solid $accent-light;
+  }
+
+  &__num {
+    position: absolute;
+    top: 9px;
+    left: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    @extend %dmsans-400;
+    font-size: 10px;
+    color: $subtitle;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &__link--cart::before {
+    content: url('../images/icons/cart.svg');
+    width: 90px;
+    height: 32px;
+    margin-top: 9px;
+  }
+
+  &__btn {
+    padding: 0;
+    background-color: $unaccent-lighten;
+    border: none;
+    border-radius: 25px;
+  }
+
+  &__btn::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding-left: 2px;
+  }
+
+  &__btn--filter::before {
+    content: url('../images/icons/filter.svg');
+  }
+}
+
+.menu {
+  padding-left: 130px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;                    
+  }
+
+  &__link {
+    @extend %rubik-500;
+    font-size: 15px;
+    color: $text;
+  }
+}
