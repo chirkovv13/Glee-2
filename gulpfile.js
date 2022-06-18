@@ -37,8 +37,8 @@ const path           = {
   },
   
   html: {
-    src:     pathSrc + "/html/main.html",
-    watch:   pathSrc + "/html/**/*.html"
+    src:     pathSrc + "/*.html",
+    watch:   pathSrc + "/**/*.html"
   },
 
   css: {
@@ -67,7 +67,6 @@ const path           = {
   },
 
   build: [
-            "app/index.html",
             "app/css/style.min.css",
             "app/js/main.min.js",
             "app/images/sprite.svg",
@@ -103,13 +102,19 @@ function html() {
     }))
   }))
   .pipe(webpHtml())
-  .pipe(fileInclude())
+  .pipe(fileInclude({
+    prefix: '@@',
+    basepath: '@file'
+  }))
+  .pipe(browserSync.stream())
+}
+
+function htmlMin() {
+  return src(path.html.src)
   .pipe(htmlmin({
     collapseWhitespace: true
   }))
-  .pipe(rename('index.html'))
-  .pipe(dest(pathSrc))
-  .pipe(browserSync.stream());
+  .pipe(dest(pathDest));
 }
 
 //Обработка CSS
@@ -254,6 +259,7 @@ function buildDist() {
 
 // exports.(имя для вызова таска) = (имя функции);
 exports.html        = html;
+exports.htmlMin     = htmlMin;
 exports.styles      = styles;
 exports.scripts     = scripts;
 exports.imagesApp   = imagesApp;
@@ -267,5 +273,5 @@ exports.cleanWebp   = cleanWebp;
 exports.buildDist   = buildDist;
 // exports.lintCss     = lintCss;
 
-exports.build       = series(cleanDist, cleanWebp, imagesApp, buildDist, imagesDist);
+exports.build       = series(cleanDist, cleanWebp, imagesApp, htmlMin, buildDist, imagesDist);
 exports.default     = series(html, styles, font, imagesApp, svgSprite, parallel(scripts, server, watching));
