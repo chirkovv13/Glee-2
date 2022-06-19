@@ -80,3 +80,38 @@ body {
   @extend %dmsans-500;
   color: $subtitle;
 }
+
+.bredcrumbes {
+  padding: 29px;
+  text-align: center;
+  color: $title-darken;
+  background-color: $btn-lighten;
+  
+  &__title {
+    margin-bottom: 3px;
+    font-size: 36px;
+    @extend %rubik-300;
+  }
+  
+  &__list {
+    display: flex;
+    justify-content: center;
+    color: $default;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 10px;
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 0;
+      transform: translate(50%);
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

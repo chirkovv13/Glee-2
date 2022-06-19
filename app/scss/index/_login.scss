@@ -1,0 +1,68 @@
+.login {
+  
+		&__container {
+      max-width: 470px;
+      margin: 0 auto;
+		}
+    
+		&__box {
+      padding: 116px 0;
+		}
+}
+
+.modal {
+  color: $text;
+    
+		&__label {
+      display: block;
+    }
+    
+    &__label-text {
+      display: inline-block;
+      margin-bottom: 9px;
+    }
+    
+		&__input {
+      width: 100%;
+      padding: 18px 10px;
+      margin-bottom: 34px;
+      border: 2px solid $default-light;
+		}
+    
+		&__btn-login {
+      width: 100%;
+      @extend %rubik-500;
+      font-size: 18px;
+      padding: 19px;
+      color: $white;
+      background-color: $btn;
+      border: none;
+		}
+
+		&__password {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0 26px;
+      border-bottom: 2px solid $default-light;
+		}
+
+		&__register {
+      text-align: center;
+		}
+
+		&__text {
+      display: inline-block;
+      padding: 34px 0 24px;
+		}
+
+		&__btn-register { 
+      width: 100%;
+      @extend %rubik-500;
+      font-size: 18px;
+      padding: 16px;
+      color: $btn-color;
+      background-color: $white;
+      border: 2px solid $btn;
+		}
+}
