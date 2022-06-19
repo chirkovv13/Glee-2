@@ -93,9 +93,11 @@
         <ul class="bredcrumbes__list">
           <li class="bredcrumbes__item">
             <a class="bredcrumbes__link" href="#">Home</a>
+            <span class="sr-only">Go home</span>
           </li>
           <li class="bredcrumbes__item">
             <a class="bredcrumbes__link" href="#">Log in</a>
+            <span class="sr-only">Go log in</span>
           </li>
         </ul>
       </div>
@@ -107,23 +109,34 @@
                 <label class="modal__label" for="#">
                   <span class="modal__label-text">Username or email address *</span>
                   <input class="modal__input" type="text" required>
+                  <span class="sr-only">enter your email address</span>
                 </label>
                 <label class="modal__label" for="#">
                   <span class="modal__label-text">Password *</span>
                   <input class="modal__input" type="password" required>
+                  <span class="sr-only">enter your password</span>
                 </label>
-                <button class="modal__btn-login" type="submit">Login</button>
+                <button class="modal__btn-login" type="submit">
+                  Login
+                  <span class="sr-only">enter</span>
+                </button>
                 <div class="modal__password">
                   <label class="modal__remember" for="#">
                     <input class="modal__checkbox" type="checkbox">
                     Remember me
+                    <span class="sr-only">Remember me</span>
                   </label>
-                  <a class="modal__link" href="#">Lost your password?</a>
+                  <a class="modal__link" href="#">Lost your password?
+                    <span class="sr-only">Lost your password</span>
+                  </a>
                 </div>
               </form>
               <div class="modal__register">
                 <span class="modal__text">Not registered? No problem</span>
-                <button class="modal__btn-register">Create an account</button>
+                <button class="modal__btn-register">
+                  Create an account
+                  <span class="sr-only">Create an account</span>
+                </button>
               </div>
             </div>
           </div>
